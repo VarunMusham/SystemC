@@ -24,6 +24,6 @@ SC_MODULE(COUNTER){
 		t2.t(tin);t2.rst(rst);t2.clk(o1);t2.out(o2);
 
 		SC_METHOD(assign_output);
-		sensitive<<clk;
+		sensitive<<clk.pos();
 	}
 };

@@ -7,7 +7,7 @@ LIBS = -L$(SYSTEMC_HOME)/build/src/.libs -lsystemc
 
 TARGET = sim.exe
 
-SRC = main_counter.cpp
+SRC = main_fsm.cpp
 
 all:
 	$(CXX) $(SRC) $(INCLUDES) $(LIBS) -o $(TARGET)
